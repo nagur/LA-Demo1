@@ -1,8 +1,7 @@
 pipeline {
-    agent any
-#        any
-#docker { image 'linuxacademycontent/jenkins_pipelines' }
-#    }
+    agent any {
+docker { image 'linuxacademycontent/jenkins_pipelines' }
+    }
     stages {
         stage('fetch') {
             steps {
